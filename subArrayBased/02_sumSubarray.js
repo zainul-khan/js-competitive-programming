@@ -22,3 +22,19 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log('All subarrays that sum to 5: ', subArr);
 
+//OR
+const arr2 = [1,2,3];
+const k = 5;
+for (let i = 0; i < arr2.length; i++) {
+    const subarr = []
+    let sum = 0;
+    for(let j = i; j < arr2.length; j++) {
+        sum = sum + arr[j]
+        subarr.push(arr[j])
+        if (sum == k) {
+        console.log('yee', subarr)
+        }
+    }
+}
+
+

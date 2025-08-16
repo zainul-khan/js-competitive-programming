@@ -1,0 +1,9 @@
+Think of it like looking through a window that slides across an array. Instead of checking every possible subarray (which would be O(n²) or worse), you maintain a "window" of elements and slide it efficiently across the data structure.
+It’s a way to reduce time complexity by avoiding recalculating things you already know.
+Instead of recalculating data in every loop iteration (which wastes time),
+you "slide" a fixed-size or variable-size range (window) across the array,
+updating results as you move — just adding new elements and removing old ones.
+
+Types of Sliding Window
+1) Fixed Window – Window size is constant (e.g., k = 3)
+2) Dynamic Window – Window size changes depending on conditions
