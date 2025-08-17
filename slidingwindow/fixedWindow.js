@@ -22,7 +22,7 @@ function findMinSumSubarray(arr, k) {
     let windowSum = 0;
     
     for (let i = 0; i < k; i++) {
-        windowSum += + arr[i]
+        windowSum += arr[i]
     }
     minSum = windowSum;
     for (let i = k; i < arr.length; i++) {
